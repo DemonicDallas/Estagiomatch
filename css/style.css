@@ -70,7 +70,7 @@ p { margin: 0; }
 
 /* Blocos de página */
 main { padding-bottom: 64px; }
-.secao { padding: 56px 0; display: flex; flex-direction: column; gap: 24px; }
+.secao { padding-block: 56px; display: flex; flex-direction: column; gap: 24px; }
 .secao-escura { background: var(--tinta); color: var(--branco); }
 .secao-branca { background: var(--branco); border-top: 1px solid var(--linha); border-bottom: 1px solid var(--linha); }
 .sobretitulo { font-family: var(--fonte-mono); font-size: 0.85rem; color: var(--azul); }
@@ -124,7 +124,7 @@ main { padding-bottom: 64px; }
 /* Gráficos de barras simples (página Dados) */
 .grafico { margin: 0; background: var(--branco); border: 1px solid var(--linha); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
 .grafico figcaption { font-weight: 600; }
-.barra-linha { display: grid; grid-template-columns: minmax(90px, 160px) minmax(0, 1fr) auto; align-items: center; gap: 10px; }
+.barra-linha { display: grid; grid-template-columns: fit-content(9rem) minmax(0, 1fr) auto; align-items: center; gap: 10px; }
 .barra-rotulo { font-size: 0.9rem; }
 .barra-fundo { height: 16px; background: var(--cinza-claro); border-radius: 3px; overflow: hidden; }
 .barra { height: 100%; background: var(--azul); border-radius: 3px; }
@@ -146,10 +146,10 @@ main { padding-bottom: 64px; }
 .competencia { margin: 0; padding: 12px 0; border: 0; border-top: 1px solid var(--cinza-claro); display: grid; grid-template-columns: minmax(180px, 1fr) minmax(0, 2fr); gap: 8px 16px; align-items: center; }
 .competencia:first-of-type { border-top: 0; }
 .competencia legend { float: left; padding: 0; font-family: var(--fonte-mono); font-size: 0.92rem; }
-.opcoes { display: flex; flex-wrap: wrap; gap: 8px; }
+.opcoes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
 .opcao { position: relative; }
 .opcao input { position: absolute; opacity: 0; width: 1px; height: 1px; }
-.opcao span { display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; border: 1px solid var(--borda); border-radius: 999px; font-size: 0.9rem; cursor: pointer; background: var(--branco); }
+.opcao span { display: flex; align-items: center; justify-content: center; text-align: center; line-height: 1.2; min-height: 44px; padding: 4px 8px; border: 1px solid var(--borda); border-radius: 999px; font-size: 0.9rem; cursor: pointer; background: var(--branco); }
 .opcao input:checked + span { background: var(--azul); border-color: var(--azul); color: var(--branco); }
 .opcao input:focus-visible + span { outline: 3px solid var(--azul); outline-offset: 2px; }
 .marcar { display: flex; gap: 12px; align-items: center; min-height: 52px; padding: 0 16px; border: 1px solid var(--borda); border-radius: 8px; cursor: pointer; }
