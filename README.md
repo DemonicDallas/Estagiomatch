@@ -2,7 +2,7 @@
 
 Protótipo do sistema que recomenda vagas de estágio em TI de acordo com o que o estudante já sabe.
 
-## 👉 [Acesse o site](https://demonicdallas.github.io/Projeto-Treinamento-de-um-sistema-para-selecionar-vagas-de-est-gio-aos-estudantes-na-rea-de-TI-/)
+## 👉 [Acesse o site](https://demonicdallas.github.io/Estagiomatch/)
 
 Responda o questionário e veja, na hora, as vagas mais compatíveis com o seu perfil.
 
