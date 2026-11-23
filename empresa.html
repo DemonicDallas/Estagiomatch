@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EstágioMatch · Empresas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <p class="faixa">Protótipo em desenvolvimento · As vagas do cálculo são de exemplo e os números das telas Empresas e Faculdades são ilustrativos. A página Dados do mercado usa dados reais, com fonte.</p>
+
+  <header class="topo">
+    <div class="container">
+      <a class="marca" href="index.html"><strong>EstágioMatch</strong><span>// IFTM Ituiutaba</span></a>
+      <nav class="menu" aria-label="Principal">
+        <a href="index.html">Início</a>
+        <a href="questionario.html">Questionário</a>
+        <a href="resultado.html">Vagas</a>
+        <a href="empresa.html" aria-current="page">Empresas</a>
+        <a href="faculdade.html">Faculdades</a>
+        <a href="dados.html">Dados do mercado</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="secao">
+      <p class="sobretitulo">para empresas</p>
+      <h1>Encontre o estagiário de TI certo</h1>
+      <span class="selo selo-ilustrativo">Visão futura do projeto · candidatos e números ilustrativos</span>
+      <p class="lead">A empresa publica a vaga com os requisitos e recebe só os candidatos compatíveis, ordenados por habilidade técnica e projetos no GitHub.</p>
+    </section>
+
+    <div class="grade" style="margin-bottom:32px">
+      <div class="cartao"><h3>Menos tempo de triagem</h3><p>O match faz o primeiro filtro dos currículos.</p></div>
+      <div class="cartao"><h3>Candidatos filtrados</h3><p>Menos risco de contratar errado.</p></div>
+      <div class="cartao"><h3>Foco só em TI</h3><p>Requisitos técnicos que plataformas genéricas não avaliam.</p></div>
+    </div>
+
+    <div class="resultado">
+      <form class="resultado-lado bloco" style="flex:1 1 340px" onsubmit="return false">
+        <h2 style="font-size:1.3rem">Publicar vaga</h2>
+        <label style="display:flex; flex-direction:column; gap:6px; font-weight:500">Título da vaga
+          <input type="text" value="Estágio em Desenvolvimento Web" style="min-height:44px; padding:0 12px; border:1px solid var(--borda); border-radius:8px; font:inherit; font-weight:400">
+        </label>
+        <fieldset style="margin:0; padding:0; border:0; display:flex; flex-direction:column; gap:8px">
+          <legend style="font-weight:500; padding-bottom:8px">Requisitos obrigatórios</legend>
+          <div class="chips">
+            <label class="marcar" style="min-height:40px"><input type="checkbox" checked><span>Lógica de programação</span></label>
+            <label class="marcar" style="min-height:40px"><input type="checkbox" checked><span>JavaScript</span></label>
+            <label class="marcar" style="min-height:40px"><input type="checkbox" checked><span>HTML/CSS</span></label>
+            <label class="marcar" style="min-height:40px"><input type="checkbox" checked><span>Git/GitHub</span></label>
+            <label class="marcar" style="min-height:40px"><input type="checkbox"><span>Java</span></label>
+            <label class="marcar" style="min-height:40px"><input type="checkbox"><span>Python</span></label>
+          </div>
+        </fieldset>
+        <button type="button" class="botao botao-primario" disabled title="Disponível na versão futura">Publicar (em breve)</button>
+      </form>
+
+      <section class="resultado-lista">
+        <h2 style="font-size:1.3rem">Candidatos compatíveis</h2>
+        <article class="cartao">
+          <div class="vaga-topo"><div><h3>Estudante A</h3><span class="vaga-area">Ciência da Computação · 5º período</span></div><div class="vaga-pct">91%<small>ilustrativo</small></div></div>
+          <div class="chips"><span class="chip">JavaScript</span><span class="chip">HTML/CSS</span><span class="chip">SQL</span><span class="chip">Git/GitHub</span></div>
+          <p class="ajuda">Perfil anônimo até o estudante aceitar o contato (LGPD)</p>
+        </article>
+        <article class="cartao">
+          <div class="vaga-topo"><div><h3>Estudante B</h3><span class="vaga-area">Análise e Desenvolvimento de Sistemas · 3º período</span></div><div class="vaga-pct">84%<small>ilustrativo</small></div></div>
+          <div class="chips"><span class="chip">Lógica de programação</span><span class="chip">JavaScript</span><span class="chip">Git/GitHub</span></div>
+          <p class="ajuda">Perfil anônimo até o estudante aceitar o contato (LGPD)</p>
+        </article>
+        <article class="cartao">
+          <div class="vaga-topo"><div><h3>Estudante C</h3><span class="vaga-area">Ciência da Computação · 4º período</span></div><div class="vaga-pct">77%<small>ilustrativo</small></div></div>
+          <div class="chips"><span class="chip">HTML/CSS</span><span class="chip">SQL</span></div>
+          <p class="ajuda">Perfil anônimo até o estudante aceitar o contato (LGPD)</p>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <span>Protótipo em desenvolvimento · 2026</span>
+      <span>Conceito EstágioMatch desenvolvido com Nicolas Souza e Augusto Moreira</span>
+    </div>
+  </footer>
+</body>
+</html>

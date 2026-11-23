@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EstágioMatch · Faculdades</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <p class="faixa">Protótipo em desenvolvimento · As vagas do cálculo são de exemplo e os números das telas Empresas e Faculdades são ilustrativos. A página Dados do mercado usa dados reais, com fonte.</p>
+
+  <header class="topo">
+    <div class="container">
+      <a class="marca" href="index.html"><strong>EstágioMatch</strong><span>// IFTM Ituiutaba</span></a>
+      <nav class="menu" aria-label="Principal">
+        <a href="index.html">Início</a>
+        <a href="questionario.html">Questionário</a>
+        <a href="resultado.html">Vagas</a>
+        <a href="empresa.html">Empresas</a>
+        <a href="faculdade.html" aria-current="page">Faculdades</a>
+        <a href="dados.html">Dados do mercado</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="secao">
+      <p class="sobretitulo">painel da instituição · IFTM Campus Ituiutaba</p>
+      <h1>Como estão seus alunos frente ao mercado</h1>
+      <span class="selo selo-ilustrativo">Visão futura do projeto · números ilustrativos, os reais virão das respostas do questionário</span>
+      <p class="lead">Os números se atualizam a cada questionário respondido: o que a turma já sabe, o que as vagas pedem e quem já está estagiando.</p>
+    </section>
+
+    <div class="grade" style="margin-bottom:24px">
+      <div class="cartao"><span class="ajuda">Questionários respondidos</span><span class="numero">48</span><span class="ajuda">ilustrativo</span></div>
+      <div class="cartao"><span class="ajuda">GitHub conectado</span><span class="numero">31</span><span class="ajuda">ilustrativo</span></div>
+      <div class="cartao"><span class="ajuda">Compatibilidade média</span><span class="numero">72%</span><span class="ajuda">ilustrativo</span></div>
+      <div class="cartao"><span class="ajuda">Alunos em estágio</span><span class="numero">9</span><span class="ajuda">ilustrativo</span></div>
+    </div>
+
+    <div class="resultado">
+      <figure class="grafico resultado-lista">
+        <figcaption>O que a turma sabe × o que as vagas pedem (ilustrativo)</figcaption>
+        <div class="legenda"><span><i style="background:var(--azul)"></i>% da turma que domina</span><span><i style="background:var(--laranja)"></i>% das vagas que pedem</span></div>
+        <div class="barra-linha"><span class="barra-rotulo">Lógica de prog.</span><div style="display:flex; flex-direction:column; gap:3px"><div class="barra-fundo" style="height:10px"><div class="barra" style="width:80%"></div></div><div class="barra-fundo" style="height:10px"><div class="barra" style="width:70%; background:var(--laranja)"></div></div></div><span class="barra-valor">80 / 70</span></div>
+        <div class="barra-linha"><span class="barra-rotulo">Python</span><div style="display:flex; flex-direction:column; gap:3px"><div class="barra-fundo" style="height:10px"><div class="barra" style="width:55%"></div></div><div class="barra-fundo" style="height:10px"><div class="barra" style="width:45%; background:var(--laranja)"></div></div></div><span class="barra-valor">55 / 45</span></div>
+        <div class="barra-linha"><span class="barra-rotulo">JavaScript</span><div style="display:flex; flex-direction:column; gap:3px"><div class="barra-fundo" style="height:10px"><div class="barra" style="width:30%"></div></div><div class="barra-fundo" style="height:10px"><div class="barra" style="width:60%; background:var(--laranja)"></div></div></div><span class="barra-valor">30 / 60</span></div>
+        <div class="barra-linha"><span class="barra-rotulo">Banco de dados</span><div style="display:flex; flex-direction:column; gap:3px"><div class="barra-fundo" style="height:10px"><div class="barra" style="width:45%"></div></div><div class="barra-fundo" style="height:10px"><div class="barra" style="width:65%; background:var(--laranja)"></div></div></div><span class="barra-valor">45 / 65</span></div>
+        <div class="barra-linha"><span class="barra-rotulo">Git/GitHub</span><div style="display:flex; flex-direction:column; gap:3px"><div class="barra-fundo" style="height:10px"><div class="barra" style="width:35%"></div></div><div class="barra-fundo" style="height:10px"><div class="barra" style="width:55%; background:var(--laranja)"></div></div></div><span class="barra-valor">35 / 55</span></div>
+        <div class="barra-linha"><span class="barra-rotulo">Metod. ágeis</span><div style="display:flex; flex-direction:column; gap:3px"><div class="barra-fundo" style="height:10px"><div class="barra" style="width:15%"></div></div><div class="barra-fundo" style="height:10px"><div class="barra" style="width:35%; background:var(--laranja)"></div></div></div><span class="barra-valor">15 / 35</span></div>
+      </figure>
+
+      <aside class="resultado-lado">
+        <div class="painel-escuro">
+          <h2 style="font-size:1.25rem">Maiores lacunas da turma</h2>
+          <p>Pedidas nas vagas, mas pouco dominadas pelos alunos. Bom ponto de partida para minicursos e projetos de extensão.</p>
+          <ol><li>JavaScript</li><li>Git/GitHub</li><li>Banco de dados</li><li>Metodologias ágeis</li></ol>
+        </div>
+        <div class="cartao">
+          <h3>Privacidade (LGPD)</h3>
+          <p>A instituição vê os dados da turma agrupados. Nomes só aparecem para quem autorizou, e o estudante pode apagar a conta quando quiser.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <span>Protótipo em desenvolvimento · 2026</span>
+      <span>Conceito EstágioMatch desenvolvido com Nicolas Souza e Augusto Moreira</span>
+    </div>
+  </footer>
+</body>
+</html>
