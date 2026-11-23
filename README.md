@@ -2,6 +2,10 @@
 
 Protótipo do sistema que recomenda vagas de estágio em TI de acordo com o que o estudante já sabe.
 
+## 👉 [Acesse o site](https://demonicdallas.github.io/Projeto-Treinamento-de-um-sistema-para-selecionar-vagas-de-est-gio-aos-estudantes-na-rea-de-TI-/)
+
+Responda o questionário e veja, na hora, as vagas mais compatíveis com o seu perfil.
+
 Projeto de pesquisa **"Treinamento de um sistema para selecionar vagas de estágio aos estudantes na área da TI"**
 (PIBIC/FAPEMIG, Edital 22/2025) — IFTM Campus Ituiutaba.
 
@@ -51,3 +55,11 @@ python -m http.server 8000
 ```
 
 e acesse `http://localhost:8000`.
+
+## Testes do cálculo
+
+Com o Node.js instalado:
+
+```
+node js/match.test.js
+```
