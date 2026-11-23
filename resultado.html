@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EstágioMatch · Vagas recomendadas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <p class="faixa">Protótipo em desenvolvimento · As vagas do cálculo são de exemplo e os números das telas Empresas e Faculdades são ilustrativos. A página Dados do mercado usa dados reais, com fonte.</p>
+
+  <header class="topo">
+    <div class="container">
+      <a class="marca" href="index.html"><strong>EstágioMatch</strong><span>// IFTM Ituiutaba</span></a>
+      <nav class="menu" aria-label="Principal">
+        <a href="index.html">Início</a>
+        <a href="questionario.html">Questionário</a>
+        <a href="resultado.html" aria-current="page">Vagas</a>
+        <a href="empresa.html">Empresas</a>
+        <a href="faculdade.html">Faculdades</a>
+        <a href="dados.html">Dados do mercado</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="secao">
+      <p class="sobretitulo">resultado</p>
+      <h1>Vagas que combinam com você</h1>
+      <span class="selo selo-ilustrativo">Calculado com as suas respostas e 8 vagas de exemplo</span>
+    </section>
+
+    <!-- Quando ainda não respondeu -->
+    <section id="sem-respostas" class="cartao" hidden>
+      <h2>Você ainda não respondeu o questionário</h2>
+      <p>As vagas são calculadas a partir do que você marcar. Leva uns 2 minutos.</p>
+      <div class="botoes"><a class="botao botao-primario" href="questionario.html">Responder questionário</a></div>
+    </section>
+
+    <!-- Quando já respondeu -->
+    <div id="com-respostas" class="resultado" hidden>
+      <div id="lista" class="resultado-lista"></div>
+      <aside class="resultado-lado">
+        <div class="painel-escuro">
+          <h2 style="font-size:1.25rem">Seu plano de estudo</h2>
+          <p>O que mais aparece nas suas 3 vagas e ainda falta ou precisa de reforço:</p>
+          <ol id="plano"></ol>
+        </div>
+        <div class="cartao">
+          <h3>Como a compatibilidade é calculada</h3>
+          <p>Para cada requisito da vaga, o sistema vê quanto você já tem: nada, metade (básico) ou tudo. Requisitos obrigatórios pesam o dobro dos diferenciais. Vagas nas áreas que você marcou ganham prioridade.</p>
+          <a href="questionario.html">Refazer o questionário</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <span>Protótipo em desenvolvimento · 2026</span>
+      <span>Conceito EstágioMatch desenvolvido com Nicolas Souza e Augusto Moreira</span>
+    </div>
+  </footer>
+
+  <script src="js/vagas.js"></script>
+  <script src="js/match.js"></script>
+  <script src="js/resultado.js"></script>
+</body>
+</html>

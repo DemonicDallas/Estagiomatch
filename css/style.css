@@ -25,6 +25,7 @@
 }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 
 body {
   margin: 0;
@@ -157,3 +158,18 @@ main { padding-bottom: 64px; }
 @media (max-width: 640px) {
   .competencia { grid-template-columns: 1fr; }
 }
+
+/* Resultado */
+.resultado { display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start; }
+.resultado-lista { flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 16px; }
+.resultado-lado { flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 16px; }
+.vaga-topo { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+.vaga-area { font-size: 0.85rem; color: var(--suave); }
+.vaga-pct { font-family: var(--fonte-titulo); font-size: 1.9rem; font-weight: 600; color: var(--azul); line-height: 1; text-align: right; }
+.vaga-pct small { display: block; font-family: var(--fonte-texto); font-size: 0.75rem; font-weight: 400; color: var(--suave); margin-top: 4px; }
+.estrela { color: var(--laranja-escuro); font-size: 0.85rem; font-weight: 600; }
+.grupo-chips { display: flex; flex-direction: column; gap: 6px; }
+.grupo-chips h4 { margin: 0; font-size: 0.85rem; color: var(--suave); }
+.painel-escuro { background: var(--tinta); color: var(--branco); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 10px; }
+.painel-escuro p { color: #C9CED8; }
+.painel-escuro ol { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
