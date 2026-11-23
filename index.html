@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EstágioMatch · Início</title>
+  <meta name="description" content="Protótipo do sistema que recomenda vagas de estágio em TI de acordo com o que o estudante já sabe. Pesquisa PIBIC/FAPEMIG, IFTM Ituiutaba.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <p class="faixa">Protótipo em desenvolvimento · As vagas do cálculo são de exemplo e os números das telas Empresas e Faculdades são ilustrativos. A página Dados do mercado usa dados reais, com fonte.</p>
+
+  <header class="topo">
+    <div class="container">
+      <a class="marca" href="index.html"><strong>EstágioMatch</strong><span>// IFTM Ituiutaba</span></a>
+      <nav class="menu" aria-label="Principal">
+        <a href="index.html" aria-current="page">Início</a>
+        <a href="questionario.html">Questionário</a>
+        <a href="resultado.html">Vagas</a>
+        <a href="empresa.html">Empresas</a>
+        <a href="faculdade.html">Faculdades</a>
+        <a href="dados.html">Dados do mercado</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container secao">
+      <p class="sobretitulo">EstágioMatch · projeto de pesquisa PIBIC/FAPEMIG · IFTM</p>
+      <h1>Encontre a vaga de estágio em TI que combina com o que você já sabe.</h1>
+      <p class="lead">Você responde um questionário sobre suas competências. O sistema compara seu perfil com os requisitos de vagas de estágio e mostra as mais compatíveis, junto com o que vale aprender.</p>
+      <div class="botoes">
+        <a class="botao botao-primario" href="questionario.html">Responder questionário</a>
+        <a class="botao botao-secundario" href="dados.html">Ver dados do mercado</a>
+      </div>
+    </section>
+
+    <section class="secao-escura">
+      <div class="container secao">
+        <h2>Muitos estudantes se formam em TI, poucos conseguem estágio.</h2>
+        <div class="destaques">
+          <div class="destaque">
+            <span class="numero">110.960</span>
+            <p>formados em cursos superiores de TIC em 2024</p>
+            <span class="fonte">Fonte: Brasscom, 2026</span>
+          </div>
+          <div class="destaque laranja">
+            <span class="numero">9,04%</span>
+            <p>dos estudantes do ensino superior fazem estágio</p>
+            <span class="fonte">Fonte: ABRES, com dados INEP/MEC</span>
+          </div>
+          <div class="destaque">
+            <span class="numero">R$ 1.431,22</span>
+            <p>bolsa-auxílio média de estágio no ensino superior (2024)</p>
+            <span class="fonte">Fonte: Nube, via ABRES</span>
+          </div>
+        </div>
+        <a href="dados.html" style="color:#A9BDF5">Ver todos os dados do mercado →</a>
+      </div>
+    </section>
+
+    <section class="container secao">
+      <h2>Como funciona</h2>
+      <ol class="passos">
+        <li>
+          <span class="numero-passo">passo 1</span>
+          <h3>Responda o questionário</h3>
+          <p>Marque seu nível em 11 competências pedidas nas vagas: linguagens, banco de dados, Git, nuvem e metodologias ágeis.</p>
+        </li>
+        <li>
+          <span class="numero-passo">passo 2</span>
+          <h3>O sistema compara</h3>
+          <p>Cada vaga tem requisitos obrigatórios e diferenciais. O sistema calcula quanto do que a vaga pede você já tem.</p>
+        </li>
+        <li>
+          <span class="numero-passo">passo 3</span>
+          <h3>Receba suas vagas</h3>
+          <p>Você vê as 3 vagas mais compatíveis e o que falta aprender para cada uma.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="container secao" style="padding-top:0">
+      <h2>Para quem é</h2>
+      <div class="grade">
+        <div class="cartao">
+          <h3>Estudantes de TI</h3>
+          <span class="selo selo-gratis">Grátis</span>
+          <p>Recebem vagas compatíveis com o que já sabem e, no futuro, montam o currículo a partir dos projetos no GitHub.</p>
+          <a href="questionario.html">Responder questionário →</a>
+        </div>
+        <div class="cartao">
+          <h3>Empresas</h3>
+          <span class="selo selo-ilustrativo">Visão futura</span>
+          <p>Publicam vagas e recebem candidatos já filtrados por habilidade técnica, com menos tempo de triagem.</p>
+          <a href="empresa.html">Ver painel da empresa →</a>
+        </div>
+        <div class="cartao">
+          <h3>Faculdades</h3>
+          <span class="selo selo-ilustrativo">Visão futura</span>
+          <p>Acompanham os estágios dos alunos e veem quais competências a turma ainda precisa desenvolver.</p>
+          <a href="faculdade.html">Ver painel da faculdade →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao-branca">
+      <div class="container secao">
+        <h2>O que as vagas pedem</h2>
+        <p class="lead">Levantamento feito no LinkedIn, Glassdoor e Indeed com empresas que oferecem estágio em TI. As empresas valorizam mais o potencial de aprendizado do que a experiência prévia.</p>
+        <div>
+          <h3 style="margin-bottom:10px">Exigências mais comuns</h3>
+          <div class="chips">
+            <span class="chip">Lógica de programação</span><span class="chip">Java</span><span class="chip">Python</span>
+            <span class="chip">C#</span><span class="chip">PHP</span><span class="chip">JavaScript</span>
+            <span class="chip">Front-end e back-end</span><span class="chip">Banco de dados</span><span class="chip">Git/GitHub</span>
+          </div>
+        </div>
+        <div>
+          <h3 style="margin-bottom:10px">Diferenciais</h3>
+          <div class="chips">
+            <span class="chip chip-falta">Frameworks</span><span class="chip chip-falta">Computação em nuvem</span><span class="chip chip-falta">Metodologias ágeis</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container secao">
+      <h2>Equipe</h2>
+      <div class="grade">
+        <div><h3>André Luiz Dias Moreira</h3><p>Bolsista PIBIC/FAPEMIG · Ciência da Computação</p></div>
+        <div><h3>Profa. Reane Franco Goulart</h3><p>Orientadora</p></div>
+        <div><h3>IFTM Campus Ituiutaba</h3><p>Instituto Federal do Triângulo Mineiro · Edital 22/2025</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <span>Fontes: Brasscom (2026), ABRES (2026), INEP/MEC, Nube (2024), Stack Overflow (2025).</span>
+      <span>Protótipo em desenvolvimento · 2026 · Conceito EstágioMatch desenvolvido com Nicolas Souza e Augusto Moreira</span>
+    </div>
+  </footer>
+</body>
+</html>
