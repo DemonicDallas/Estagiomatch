@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EstágioMatch · Questionário</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <p class="faixa">Protótipo em desenvolvimento · As vagas do cálculo são de exemplo e os números das telas Empresas e Faculdades são ilustrativos. A página Dados do mercado usa dados reais, com fonte.</p>
+
+  <header class="topo">
+    <div class="container">
+      <a class="marca" href="index.html"><strong>EstágioMatch</strong><span>// IFTM Ituiutaba</span></a>
+      <nav class="menu" aria-label="Principal">
+        <a href="index.html">Início</a>
+        <a href="questionario.html" aria-current="page">Questionário</a>
+        <a href="resultado.html">Vagas</a>
+        <a href="empresa.html">Empresas</a>
+        <a href="faculdade.html">Faculdades</a>
+        <a href="dados.html">Dados do mercado</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="max-width:880px">
+    <section class="secao">
+      <p class="sobretitulo">questionário do estudante</p>
+      <h1>Conte o que você já sabe</h1>
+      <p class="lead">Leva uns 2 minutos. Não existe resposta certa: quanto mais sincero, melhor a vaga sugerida. Suas respostas ficam só no seu navegador e não são enviadas para lugar nenhum.</p>
+    </section>
+
+    <form id="questionario" class="form" novalidate>
+      <fieldset class="bloco">
+        <legend>1. Seu nível em cada competência</legend>
+        <p class="ajuda">As mesmas competências que aparecem nas vagas de estágio mapeadas na pesquisa.</p>
+        <div id="competencias"></div>
+      </fieldset>
+
+      <fieldset class="bloco">
+        <legend>2. Em quais áreas você gostaria de estagiar?</legend>
+        <p class="ajuda">Pode marcar mais de uma. Vagas dessas áreas aparecem primeiro quando a compatibilidade for parecida.</p>
+        <div id="areas" class="grade" style="grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:12px"></div>
+      </fieldset>
+
+      <p id="erro" class="erro" role="alert" hidden></p>
+
+      <div class="botoes" style="justify-content:flex-end">
+        <button type="submit" class="botao botao-primario">Ver vagas recomendadas →</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <span>Protótipo em desenvolvimento · 2026</span>
+      <span>Conceito EstágioMatch desenvolvido com Nicolas Souza e Augusto Moreira</span>
+    </div>
+  </footer>
+
+  <script src="js/vagas.js"></script>
+  <script src="js/questionario.js"></script>
+</body>
+</html>
